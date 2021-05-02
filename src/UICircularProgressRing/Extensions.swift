@@ -11,6 +11,7 @@
  */
 
 /// Helper extension to allow removing layer animation based on AnimationKeys enum
+import UIKit
 extension CALayer {
     func removeAnimation(forKey key: UICircularRing.AnimationKeys) {
         removeAnimation(forKey: key.rawValue)
@@ -29,6 +30,7 @@ extension CALayer {
  A private extension to CGFloat in order to provide simple
  conversion from degrees to radians, used when drawing the rings.
  */
+
 extension CGFloat {
     var rads: CGFloat { return self * CGFloat.pi / 180 }
 }
